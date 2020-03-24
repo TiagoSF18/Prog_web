@@ -1,0 +1,98 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>CONTATOS</title>
+        
+        <style type="text/css">
+          .border{
+            border-radius: 10px;
+            height:15px;
+          }
+          #sec01{
+            border-style:ridge;
+            border-width:1px;
+            border-color: grey;
+            width:200px;
+            text-align:center;
+            padding-top:10px;
+            padding-bottom:10px;
+          }  
+          #btn1{
+            margin-right:40px;
+          }   
+          #btn1:hover{
+            background:#778899;
+            color:cornsilk;
+            border-style:none;
+            
+          }
+          #btn2:hover{
+            background:#FF7F50;
+            color:cornsilk;
+            border-style:none;
+          }
+          .list{
+            float: left;
+            margin-left: 60px;
+            padding:45px;
+          }
+          .input:hover{
+            -moz-transform: scale(1.1);
+    	      -webkit-transform: scale(1.1);
+	          transform: scale(1.1);
+          }
+        </style>
+
+    </head>
+      <body>
+        <h1 align="center" style="font-family: 'Oswald', sans-serif; color:#6831E9" >ENTRE EM CONTATO CONOSCO</h1>
+        <hr>
+        </br>
+        <div class="list">
+
+          <h3 style="font-family: 'Roboto Condensed', sans-serif; color:#6831E9">Outros Canais de Atendimento</h3>
+          <!--não entendi se queria apenas as imagens ou a imagem + o "texto" -->
+          <ul>
+            
+            <li class="input"><img src="img/clock.png" style="width:17px"  id="clock"> Horarios de Funcionamento</li></br>
+            
+            <li class="input"><img src="img/phone.png" style="width:17px;" id="phone"> Fones</li></br>
+            
+            <li class="input"><img src="img/whatsapp.png" style="width:17px" id="whats"> Whatsapp</li></br>
+
+            <li class="input"><img src="img/mail.png" style="width:17px"  id="email"> E-mails</li></br>
+            </br>
+          </ul>
+        </div>
+
+        <div class="list">
+          <!--formulario de cadastro com opção de enviar ou resetar ao final-->
+          <form method="POST" id="sec01" action="mailto:tiagosantosf6@gmail.com" enctype="text/plain">
+            
+            <label>Nome:</label></br>
+            <input type="text" name="nome" class="border" autocomplete="off" placeholder="digite o seu nome..." required/></br></br>
+            
+            <label>Email:</label></br>
+            <input type="text" name="Email" class="border" autocomplete="off" id="email" placeholder="digite o seu email..." required/></br></br>
+
+            <label>Endereço:</label></br>
+            <input type="text" name="Endereco" class="border"  id="endereco" placeholder="digite o seu endereço..." autocomplete="off" required/></br></br>
+
+            <label>Fone:</label></br>
+            <input type="phone" name="Fone" class="border" autocomplete="off" id="fone" placeholder="digite o seu telefone..." required/></br></br>
+            
+            <label>Mensagem:</label></br>
+            <!-- <input type="text" name="mensagem" class="border"  id="mensagem" placeholder="digite a sua mensagem..." required/></br></br> -->
+            <textarea name="Mensagem" rows="6" cols="20" wrap="virtual" placeholder="Digite aqui sua mensagem..." minlength="4"></textarea></p><br>
+
+            <input type="submit" name="btn1" id="btn1" value="Enviar"/>
+
+            <input type="reset" name="btn2" id="btn2" value="Limpar"/>
+
+          </form>
+        </div>
+      </body>
+</html>
